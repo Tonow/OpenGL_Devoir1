@@ -23,10 +23,10 @@ void Rotated(double theta,double x,double y,double z){
     glMultMatrixd(m);
 // La matrice de rotation Z
 #define M(ligne,colonne) m[colonne*4+ligne]
-    M(0,0)= ;M(0,1)=;M(0,2)= ; M(0,3)=;
-    M(1,0)=  ;M(1,1)= ;M(1,2)=;	M(1,3)=;
-    M(2,0)=   ;M(2,1)= ;M(2,2)=;	M(2,3)=;
-    M(3,0)=  ;M(3,1)=      ;M(3,2)= ;M(3,3)=;
+    M(0,0)= cos(a);     M(0,1)= -sin(a);    M(0,2)= 0;      M(0,3)= 0;
+    M(1,0)= sin(a);     M(1,1)= cos(a);     M(1,2)= 0;      M(1,3)= 0;
+    M(2,0)= 0;          M(2,1)= 0;          M(2,2)= 1;	    M(2,3)= 0;
+    M(3,0)= 0;          M(3,1)= 0;          M(3,2)= 0;      M(3,3)= 1;
 #undef M
     glMultMatrixd(m);
 // Q
