@@ -41,7 +41,8 @@ void clavier(unsigned char key){}
 void redimension(int width, int height){}
 
 void wireSphere(double radius, int slice,int stack){
-	double radius2 = radius + 0.2;
+	double radius2 = radius + 0.2; // je crée une sphere un peut plus grande que celle precedante
+	// afin de relier les point entre eux 
 	double theta,phi,cost,cost2,costs,costs2,sint,sint2,sints,sints2,sinp,sinps,z,z2,zs;
 	int i,j;
 	double incrSlice =  2 * M_PI / (double) slice;
